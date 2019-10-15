@@ -1,29 +1,9 @@
-<!DOCTYPE HTML>
-<html>
-  <head>
-    <title>Conversion</title>
-  </head>
+{% extends "layout.html" %}
+
+{% set active_page = "home"%}
+
+{% block title %}Home{% endblock %}
   
-  <body>
-    <form action='/response'>
-      Input An Amount In Feet<br>
-      <input type="text" name="feet">
-      <br><br>
-      <input type="submit">
-    </form>
-     
-    <nav class="navbar navbar-default">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <a class="navbar-brand" href=".">My Website</a>
-        </div>
-          <ul class="nav navbar-nav">
-            <li {% if active_page == "home" %}class="active"{% endif %}><a href=".">Home</a></li>
-            <li {% if active_page == "page1" %}class="active"{% endif %}><a href="/aboutus">Page 1</a></li>
-          </ul>
-      </div>
-    </nav>
-
-
-  </body>
-</html>
+{% block content %}
+  <h1>Home Page</h1>
+{% endblock %}
