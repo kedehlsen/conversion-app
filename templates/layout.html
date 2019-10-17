@@ -19,9 +19,11 @@
     <!--nav bar-->
  <nav class="navbar navbar-expand-sm bg-light">
   <ul class="navbar-nav">
-    <li {% if active_page == "home" %}class="active"{% endif %}><a class="nav-link" href=".">Home</a></li> <!--active class was nav-item-->
-    <li {% if active_page == "page1" %}class="active"{% endif %}><a class="nav-link" href="/p1">Page 1</a></li> <!--active class was nav-item-->
-    <li {% if active_page == "page2" %}class="active"{% endif %}><a class="nav-link" href="/p2">Page 2</a></li> <!--active class was nav-item-->
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <li {% if active_page == "home" %}class="nav-item, active"{% endif %}><a class="nav-link" href=".">Home</a></li> <!--active class was nav-item-->
+      <li {% if active_page == "page1" %}class="nav-item, active"{% endif %}><a class="nav-link" href="/p1">Page 1</a></li> <!--active class was nav-item-->
+      <li {% if active_page == "page2" %}class="nav-item, active"{% endif %}><a class="nav-link" href="/p2">Page 2</a></li> <!--active class was nav-item-->
+    </div>
   </ul>
 </nav>
     
