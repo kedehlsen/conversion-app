@@ -13,6 +13,10 @@ def render_page1():
 @app.route("/p2")
 def render_page2():
     return render_template('page2.html')
+
+@app.route("/response")
+def render_response():
+    return render_template('response.html')
     
 if __name__=="__main__":
     app.run(debug=False)
