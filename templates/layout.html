@@ -29,6 +29,14 @@
       </div>
     </nav>
     
+ <nav class="navbar navbar-expand-sm bg-light">
+  <ul class="navbar-nav">
+    <li {% if active_page == "home" %}class="active"{% endif %}><a class="nav-link" href=".">Home</a></li> <!--active class was nav-item-->
+    <li {% if active_page == "page1" %}class="active"{% endif %}><a class="nav-link" href="/p1">Page 1</a></li> <!--active class was nav-item-->
+    <li {% if active_page == "page2" %}class="active"{% endif %}><a class="nav-link" href="/p2">Page 2</a></li> <!--active class was nav-item-->
+  </ul>
+</nav>
+    
     <!--page content-->
     {% block content %}{% endblock %}
     
