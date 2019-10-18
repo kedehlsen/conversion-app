@@ -8,6 +8,7 @@ def render_main():
 
 @app.route("/p1") #annotations tell which function goes with which request
 def render_page1():
+    
     return render_template('page1.html')
 
 @app.route("/p2")
@@ -20,7 +21,10 @@ def render_page3():
 
 @app.route("/response")
 def render_response():
+    celsius_value = float(request.args['Celsius'])
+    response = (celsius_value * (9/5)) + 32
     return render_template('response.html')
+
     
 if __name__=="__main__":
     app.run(debug=False)
