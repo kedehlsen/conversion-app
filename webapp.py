@@ -23,7 +23,7 @@ def render_page3():
 def render_response():
     celsius_value = float(request.args['Celsius'])
     response = (celsius_value * (9/5)) + 32
-    return render_template('response.html')
+    return render_template('response.html', responseFromServer = response)
 
     
 if __name__=="__main__":
