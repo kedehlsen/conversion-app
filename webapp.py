@@ -31,6 +31,12 @@ def render_response2():
     response2 = kelvin_value - 273.15
     return render_template('response2.html', responseFromServer2 = response2)
 
+@app.route("/response3")
+def render_response3():
+    fahrenheit = float(request.args['Fahrenheit'])
+    response3 = (fahrenheit_value − 273.15) × 9/5 + 32
+    return render_template('response3.html', responseFromServer3 = response3)
+
     
 if __name__=="__main__":
     app.run(debug=False)
