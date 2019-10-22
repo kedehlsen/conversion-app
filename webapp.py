@@ -34,7 +34,7 @@ def render_response2():
 @app.route("/response3")
 def render_response3():
     fahrenheit_value = float(request.args['Fahrenheit'])
-    response3 = (fahrenheit_value − 273.15) × 9/5 + 32
+    response3 = (fahrenheit_value − 273.15) * 9/5 + 32
     return render_template('response3.html', responseFromServer3 = response3)
 
     
