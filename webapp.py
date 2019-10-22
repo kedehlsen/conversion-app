@@ -28,8 +28,8 @@ def render_response():
 @app.route("/response2")
 def render_response2():
     kelvin_value = float(request.args['Kelvin'])
-    response = kelvin_value - 273.15
-    return render_template('response2.html', responseFromServer = response)
+    response2 = kelvin_value - 273.15
+    return render_template('response2.html', responseFromServer2 = response2)
 
     
 if __name__=="__main__":
