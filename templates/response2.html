@@ -1,0 +1,10 @@
+{% extends "response_layout.html" %}
+
+{% set active_page = "response2" %}
+
+{% block title %}Response{% endblock %}
+  
+{% block content %}
+  <h1>Response:</h1>
+  <p>{{ responseFromServer }}</p>
+{% endblock %}
